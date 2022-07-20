@@ -18,6 +18,7 @@ async function getUsers(){
             document.getElementById("message").innerHTML = player
         }     
     catch (error) {
-        console.log(error)
+            console.log('Promise rejected.');
+            console.log(error.message);
     }
 }
