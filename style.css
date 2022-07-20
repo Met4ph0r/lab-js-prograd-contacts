@@ -1,7 +1,11 @@
 body{
-    /* background-color: rgba(0, 114, 245, 0.674); */
     background-color: rgb(71, 157, 255);
+    font-family: 'Trebuchet MS';
     color: white;
+}
+
+::selection{
+    background-color: rgba(64, 64, 64, 0.953);
 }
 
 #btnGet{
@@ -11,34 +15,33 @@ body{
   padding:15px;
   background-color: rgb(84, 137, 245);
   border: none;
-  /* background-color: rgba(255, 255, 255, 0); */
-  /* border: 2px solid white; */
   border-radius: 10px;
   color:white;
   font-size: 20px;
   font-weight: bold;
   box-shadow: 2px 2px 5px rgba(170, 173, 252, 0.6) inset, 3px 3px 10px rgba(0,0,0,0.6);
-  transition: ease-in-out 200ms, width ease-in-out 900ms, box-shadow ease-in-out 400ms;
+  transition: ease-in-out 200ms;
+  user-select: none;
 }
 
 #btnGet:hover{
     transform: translate(-1px, -2px);
+    cursor: pointer;
     /* box-shadow: 3px 3px 10px rgba(0,0,0,0.6); */
     /* background-color: rgb(0, 132, 199); */
     /* border: 2px solid white; */
-    cursor: pointer;
 }
-
 
 #btnGet:active{
     transform: translate(1px, 2px);
     box-shadow: 3px 3px 5px rgba(42, 42, 42, 0.6) inset ;
+    transition: ease-in-out 150ms;
 }
 
 .player {
     background-color: rgba(0, 125, 203, 0.638);
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     margin-top: 20%;
     margin-left:5% ;
@@ -49,13 +52,11 @@ body{
 }
 
 .player:hover{
+    border-radius: 1px;
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
     background-color: rgb(0, 78, 212);
 }
-
-
-
 
 #message {
     display: grid;
@@ -66,18 +67,15 @@ body{
 h1{
     margin-top: 20px;
     text-align: center;
-    font-family: 'Trebuchet MS';
     font-size: 30px;
 }
 h2{
     position: absolute;
-    font-family: 'Trebuchet MS';
+    margin-left: 25px;
     font-size: 30px;
 }
 
 .player>.strength {
     font-size: 20px;
-    font-weight: bold;
-
-    
+    font-weight: bold;  
 }
